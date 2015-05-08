@@ -8,7 +8,13 @@ public class HelloWorld {
         public void helloFromC();
     }
     static public void main(String argv[]) {
-        CTest ctest = (CTest) Native.loadLibrary("./bin/libctest.so", CTest.class);
-        ctest.helloFromC();
+    	try {
+			CTest ctest = (CTest) Native.loadLibrary("./libctest.so", CTest.class);
+			ctest.helloFromC();    		
+		}
+		catch (UnsatisfiedLinkError e) {
+			CTest ctest = (CTest) Native.loadLibrary("./bin/libctest.so", CTest.class);
+			ctest.helloFromC();    		    		
+		}
     }
 }
