@@ -1,0 +1,1 @@
+{"id":"java8","ext":"java","version":"JDK 1.8.0","compile":"chmod +x Example1.sh && ./Example1.sh","execute":"cd bin && java -jar Example1.jar && cd ..","preview":"","command":null,"file":"/home/cg/src/samples/Example1.java","url":"compile_java8_online.php","mode":"java"}
