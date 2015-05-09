@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Class-Path: .
+Main-Class: HelloWorld
+
+Name: com/sun/jna/
+Specification-Title: Java Native Access (JNA)
+Implementation-Title: com.sun.jna
+Implementation-Version: 3.3.0 (b0)
+Specification-Version: 3
+Implementation-Vendor: JNA Development Team
+Specification-Vendor: JNA Development Team
+
