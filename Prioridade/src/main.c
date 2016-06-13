@@ -2,7 +2,7 @@
  * main.c
  *
  *  Created on: 08/07/2015
- *      Author: hugo
+ *      Author: Hugo Dionzio Santos
  */
 #define TAM 10
 
