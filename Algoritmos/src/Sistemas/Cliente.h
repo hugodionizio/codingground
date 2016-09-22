@@ -1,10 +1,10 @@
 typedef struct {
-	char nomeCompleto [80];
+	char nomeCompleto[80];
 	short anoNascimento;
 	float rendaMensal;
 } Cliente;
 
-bool teste () {
+bool teste() {
 	bool validade = false;
 
 	Cliente *cadastro;

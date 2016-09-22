@@ -8,6 +8,4 @@
 #ifndef ALGORITMOS_H_
 #define ALGORITMOS_H_
 
-
-
 #endif /* ALGORITMOS_H_ */

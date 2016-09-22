@@ -10,16 +10,16 @@ struct _Reg {
 
 typedef struct _Reg Reg;
 
-void trocar (int *a, int *b);
+void trocar(int *a, int *b);
 
-int Passagens () {
+int Passagens() {
 	int x;
 	int y;
-	int *z = (int *)malloc(sizeof(int)*2);
+	int *z = (int *) malloc(sizeof(int) * 2);
 
-	Reg *w = (Reg *)malloc(sizeof(Reg)*1);
-	Reg *k = (Reg *)malloc(sizeof(Reg)*1);
-	Reg *aux = (Reg *)malloc(sizeof(Reg)*1);
+	Reg *w = (Reg *) malloc(sizeof(Reg) * 1);
+	Reg *k = (Reg *) malloc(sizeof(Reg) * 1);
+	Reg *aux = (Reg *) malloc(sizeof(Reg) * 1);
 
 	x = 1;
 	y = 2;
@@ -35,7 +35,7 @@ int Passagens () {
 
 	printf("x = %d \ty = %d", x, y);
 
-	trocar(&x,&y);
+	trocar(&x, &y);
 
 	printf("\n");
 	printf("x = %d \ty = %d", x, y);
@@ -48,7 +48,7 @@ int Passagens () {
 	printf("z0 = %d \tz1 = %d", z[0], z[1]);
 	printf("\n");
 
-	z = (int *)malloc(sizeof(int)*3);
+	z = (int *) malloc(sizeof(int) * 3);
 	z[0] = 4;
 	z[1] = 5;
 	z[2] = 6;
@@ -62,7 +62,7 @@ int Passagens () {
 		printf("\nOK\n");
 	}
 
-	w->proximo = (Reg *)malloc(sizeof(Reg));
+	w->proximo = (Reg *) malloc(sizeof(Reg));
 
 	if (w->proximo == NULL) {
 		printf("\nOK\n");
@@ -81,7 +81,7 @@ int Passagens () {
 
 	w->proximo = NULL;
 
-	w->proximo = (Reg *)malloc(sizeof(Reg));
+	w->proximo = (Reg *) malloc(sizeof(Reg));
 
 	w->proximo->u = 11;
 	w->proximo->v = 12;
@@ -98,11 +98,10 @@ int Passagens () {
 	printf("k.u = %d \tk.v = %d", k->u, k->v);
 	printf("\n");
 
-
 	return (0);
 }
 
-void trocar (int *a, int *b) {
+void trocar(int *a, int *b) {
 	int aux;
 
 	aux = *a;

@@ -1,17 +1,21 @@
-typedef struct {
-	char nomeCompleto [80];
+typedef struct Cliente {
+	char nomeCompleto[80];
 	short anoNascimento;
 	float rendaMensal;
 } Cliente;
 
-bool teste () {
+typedef enum bool {
+	false, true
+} bool;
+
+bool teste() {
 	bool validade = false;
 
 	Cliente *cadastro;
 
-	*cadastro = (cadastro *) malloc(sizeof(Cliente)); // *cadastro = new Cliente[10];
+	cadastro = (Cliente *) malloc(sizeof(Cliente *)); // *cadastro = new Cliente[10];
 
-	cadastro[7];
+	//cadastro[7];
 
 	validade = true;
 

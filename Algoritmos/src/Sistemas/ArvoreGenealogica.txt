@@ -1,3 +1,4 @@
+/*
 pai
 filho
 tio
@@ -25,3 +26,4 @@ geração(c, h) = k
 
 união(d, g)
 geração(d, g) = l
+*/

@@ -37,10 +37,10 @@ void preencherLinhaVideo(char *Video, char simbolo, int posicao);
 void preencherVetor(char *Vetor, char simbolo, int posicao);
 
 // Função Principal
-int Quadros(void){
+int Quadros(void) {
 // Seção de tipos de dados
 // Sub-seção de constantes
-	 char frase[]="Frase\n";
+	char frase[] = "Frase\n";
 
 // Sub-seção de variáveis
 	char Linha[LINHA];
@@ -50,35 +50,41 @@ int Quadros(void){
 // Seção modularizada
 	inicializar(Video);
 
-	preencherVideo(Video, '.', CANTO_ESQUERDO_SUPERIOR+1);
+	preencherVideo(Video, '.', CANTO_ESQUERDO_SUPERIOR + 1);
 	gerarSaltosLinhaVideo(Video);
-	preencherVideo(Video, '.', CANTO_DIREITO_SUPERIOR+2);
+	preencherVideo(Video, '.', CANTO_DIREITO_SUPERIOR + 2);
 
-	Video[CANTO_ESQUERDO_SUPERIOR]='H';
-	Video[CANTO_DIREITO_SUPERIOR]='U';
-	Video[CANTO_ESQUERDO_INFERIOR]='G';
-	Video[CANTO_DIREITO_INFERIOR]='O';
-	Video[RESOLUCAO-1]='\0';
+	Video[CANTO_ESQUERDO_SUPERIOR] = 'H';
+	Video[CANTO_DIREITO_SUPERIOR] = 'U';
+	Video[CANTO_ESQUERDO_INFERIOR] = 'G';
+	Video[CANTO_DIREITO_INFERIOR] = 'O';
+	Video[RESOLUCAO - 1] = '\0';
 
 // Sub-seção de saída
-	printf("\nTamanho da resolução: %d \n%d",RESOLUCAO,Video[RESOLUCAO]);
+	printf("\nTamanho da resolução: %d \n%d", RESOLUCAO, Video[RESOLUCAO]);
 
-	printf("CANTO_ESQUERDO_SUPERIOR = %d; [CANTO_DIREITO_SUPERIOR]= %d; \nCANTO_ESQUERDO_INFERIOR = %d; CANTO_DIREITO_INFERIOR = %d\n",	CANTO_ESQUERDO_SUPERIOR, CANTO_DIREITO_SUPERIOR, CANTO_ESQUERDO_INFERIOR, CANTO_DIREITO_INFERIOR);
+	printf(
+			"CANTO_ESQUERDO_SUPERIOR = %d; [CANTO_DIREITO_SUPERIOR]= %d; \nCANTO_ESQUERDO_INFERIOR = %d; CANTO_DIREITO_INFERIOR = %d\n",
+			CANTO_ESQUERDO_SUPERIOR, CANTO_DIREITO_SUPERIOR,
+			CANTO_ESQUERDO_INFERIOR, CANTO_DIREITO_INFERIOR);
 
-	printf("\nCanto esquerdo superior: %c\t	Canto direito superior: %c\nCanto esquerdo inferior: %c\t	Canto direito inferior: %c\n",Video[CANTO_ESQUERDO_SUPERIOR],Video[CANTO_DIREITO_SUPERIOR],Video[CANTO_ESQUERDO_INFERIOR],Video[CANTO_DIREITO_INFERIOR]);
+	printf(
+			"\nCanto esquerdo superior: %c\t	Canto direito superior: %c\nCanto esquerdo inferior: %c\t	Canto direito inferior: %c\n",
+			Video[CANTO_ESQUERDO_SUPERIOR], Video[CANTO_DIREITO_SUPERIOR],
+			Video[CANTO_ESQUERDO_INFERIOR], Video[CANTO_DIREITO_INFERIOR]);
 
-	printf("\n%s\n",Video);
+	printf("\n%s\n", Video);
 
 	return (0);
 }
-
 
 // Seção de funcões, procedimentos e subrotinas
 
 void inicializar(char *Video) {
 	int cursor;
 
-	for(cursor = CANTO_ESQUERDO_SUPERIOR; cursor < CANTO_DIREITO_INFERIOR; cursor++) {
+	for (cursor = CANTO_ESQUERDO_SUPERIOR; cursor < CANTO_DIREITO_INFERIOR;
+			cursor++) {
 		Video[cursor] = ' ';
 	}
 }
@@ -86,8 +92,8 @@ void inicializar(char *Video) {
 void preencherVideo(char *Video, char simbolo, int posicao) {
 	int cursor;
 
-	for(cursor = posicao; cursor <= CANTO_DIREITO_INFERIOR; cursor++) {
-		if (Video[cursor]!='\n')
+	for (cursor = posicao; cursor <= CANTO_DIREITO_INFERIOR; cursor++) {
+		if (Video[cursor] != '\n')
 			Video[cursor] = simbolo;
 	}
 }
@@ -96,16 +102,16 @@ void gerarSaltosLinhaVideo(char *Video) {
 	int cursor;
 
 	do {
-		cursor=CANTO_DIREITO_SUPERIOR+1;
-		Video[cursor]='\n';
-		cursor+=(LINHA);
-	} while (cursor<CANTO_DIREITO_INFERIOR-(LINHA));
+		cursor = CANTO_DIREITO_SUPERIOR + 1;
+		Video[cursor] = '\n';
+		cursor += (LINHA);
+	} while (cursor < CANTO_DIREITO_INFERIOR - (LINHA));
 }
 
 void preencherLinhaVideo(char *Video, char simbolo, int posicao) {
 	int cursor;
 
-	for(cursor = posicao; cursor <= CANTO_DIREITO_SUPERIOR; cursor++)
+	for (cursor = posicao; cursor <= CANTO_DIREITO_SUPERIOR; cursor++)
 		if (Video[cursor] != '\n')
 			Video[cursor] = simbolo;
 }
@@ -113,7 +119,7 @@ void preencherLinhaVideo(char *Video, char simbolo, int posicao) {
 void preencherVetor(char *Vetor, char simbolo, int posicao) {
 	int cursor;
 
-	for(cursor = posicao; cursor <= CANTO_DIREITO_INFERIOR; cursor++)
+	for (cursor = posicao; cursor <= CANTO_DIREITO_INFERIOR; cursor++)
 		if (Vetor[cursor] != '\n')
 			Vetor[cursor] = simbolo;
 }
@@ -138,37 +144,30 @@ void preencherVetor(char *Vetor, char simbolo, int posicao) {
 //	Video[70-1]='|';
 
 /*
-	for (cursor=CANTO_DIREITO_SUPERIOR+1; cursor<CANTO_DIREITO_INFERIOR; cursor++) { // Preencher o vídeo com espaços entre os cantos na tela, exceto o Canto Esquerdo e Inferior
-//		printf("%d\t", cursor);
-		if (Video[cursor] != '\n')
-			Video[cursor]=' ';
-	}
-*/
+ for (cursor=CANTO_DIREITO_SUPERIOR+1; cursor<CANTO_DIREITO_INFERIOR; cursor++) { // Preencher o vídeo com espaços entre os cantos na tela, exceto o Canto Esquerdo e Inferior
+ //		printf("%d\t", cursor);
+ if (Video[cursor] != '\n')
+ Video[cursor]=' ';
+ }
+ */
 
 //		printf("%d\t", cursor);
-
 //		printf("%d\t", cursor);
-
 //	printf("\nPosicão (%d/2)-1=(%lf)-1=%d\n",RESOLUCAO,(double)((RESOLUCAO+0.0)/2),(int)((float)((RESOLUCAO+0.0)/2)-1));
 //	printf("\nA posição de 'X' está em %d, sendo igual a %c\n",(int)((float)((RESOLUCAO+0.0)/2)-1),Video[(int)((float)((RESOLUCAO+0.0)/2)-1)]);
-
 //	printf("\nA posição de 'X' está em %d, sendo igual a %c\n",(int)((float)((RESOLUCAO+0.0)/2)-1),Video[(int)((float)((RESOLUCAO+0.0)/2)-1)]);
 //	Video[(int)((float)((RESOLUCAO+0.0)/4)-1)]='O';
 //	Video[(int)((float)((RESOLUCAO+0.0)*(3/4))-1)]='O';
-
 /*
-	for (cursor=LINHA+750; cursor-LINHA-750<strlen(Linha); cursor++)
-		Video[cursor] = Linha[cursor-LINHA];	//-750];?
+ for (cursor=LINHA+750; cursor-LINHA-750<strlen(Linha); cursor++)
+ Video[cursor] = Linha[cursor-LINHA];	//-750];?
 
-	for (cursor=1; cursor<CANTO_DIREITO_SUPERIOR; cursor++)
-		Linha[cursor]='_';
-*/
+ for (cursor=1; cursor<CANTO_DIREITO_SUPERIOR; cursor++)
+ Linha[cursor]='_';
+ */
 
 //	printf("\n%s",Video);
-
 //	printf("\n%s",frase);
-
 //printf("%d\t=%c",cursor,Video[cursor]);
-
 //	if (Video[(int)((float)((RESOLUCAO+0.0)/2)-1)]!='\n')
 //		Video[(int)((float)((RESOLUCAO+0.0)/2)-1)]='X';

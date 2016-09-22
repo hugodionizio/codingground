@@ -10,8 +10,8 @@ typedef struct _pessoa {
 } Pessoa;
 
 // Interface do programa
-void inicializar(Pessoa *cadastro, int tamanhoBancoDados);	// Inicializar os registros.nome[0] com ''
-void preencher(Pessoa *cadastro);		// Preencher o cadastro (OPERADOR SETA ->)
+void inicializar(Pessoa *cadastro, int tamanhoBancoDados);// Inicializar os registros.nome[0] com ''
+void preencher(Pessoa *cadastro);	// Preencher o cadastro (OPERADOR SETA ->)
 void mostrar(Pessoa *cadastro);			// Mostrad o cadastro
 
 // Função principal
@@ -25,27 +25,28 @@ int main(void) {
 	Pessoa *cadastro = NULL;
 	int registroAtual, limiteCadastros;
 
-
 // Seção modularizada
-	printf ("Informe o limite de cadastros: ");
-	scanf ("%d", &limiteCadastros);
+	printf("Informe o limite de cadastros: ");
+	scanf("%d", &limiteCadastros);
 	fflush(stdin);
 
-	cadastro = malloc(sizeof(Pessoa) * limiteCadastros);	// Aloca um intervalo de memória para os cadastros
+	cadastro = malloc(sizeof(Pessoa) * limiteCadastros);// Aloca um intervalo de memória para os cadastros
 
-	if (!(cadastro = malloc(limiteCadastros))) {	// Testa se realmente foi alocado
-		printf ("não alocado.");
+	if (!(cadastro = malloc(limiteCadastros))) {// Testa se realmente foi alocado
+		printf("não alocado.");
 		exit(1);
 	}
 
 	inicializar(cadastro, limiteCadastros);
 
-	for (registroAtual = INICIO; registroAtual < limiteCadastros; registroAtual++) {	// Preenchimento de cadastro
+	for (registroAtual = INICIO; registroAtual < limiteCadastros;
+			registroAtual++) {	// Preenchimento de cadastro
 		fflush(stdin);
 		preencher(&cadastro[registroAtual]); // Passar o endereço de cadastro para a função
 	}
 
-	for (registroAtual = INICIO; registroAtual < limiteCadastros; registroAtual++) {	// Visualização de cadastros
+	for (registroAtual = INICIO; registroAtual < limiteCadastros;
+			registroAtual++) {	// Visualização de cadastros
 		mostrar(&cadastro[registroAtual]); // Passar o endereço de cadastro para a função
 	}
 
@@ -58,7 +59,8 @@ void inicializar(Pessoa *cadastro, int tamanhoBancoDados) {
 	const int INICIO = 0;
 	register int registroAtual;
 
-	for (registroAtual = INICIO; registroAtual < tamanhoBancoDados; registroAtual++) {
+	for (registroAtual = INICIO; registroAtual < tamanhoBancoDados;
+			registroAtual++) {
 		cadastro[registroAtual].nome[0] = '0';
 	}
 }
@@ -66,21 +68,23 @@ void inicializar(Pessoa *cadastro, int tamanhoBancoDados) {
 // Preencher o cadastro (- OPERADOR SETA ->)
 void preencher(Pessoa *cadastro) {
 
-	printf ("Informe um nome: ");
-	gets (cadastro->nome);
+	printf("Informe um nome: ");
+	gets(cadastro->nome);
 
-	printf ("Informe a data de nascimento: ");
-	scanf ("%d/%d/%d", &cadastro->dataNasc[0], &cadastro->dataNasc[1], &cadastro->dataNasc[2]);
+	printf("Informe a data de nascimento: ");
+	scanf("%d/%d/%d", &cadastro->dataNasc[0], &cadastro->dataNasc[1],
+			&cadastro->dataNasc[2]);
 
-	printf ("Informe o numero do celular: ");
-	scanf ("%d", &cadastro->telefone);
+	printf("Informe o numero do celular: ");
+	scanf("%d", &cadastro->telefone);
 }
 
 // Mostrar o cadastro
 void mostrar(Pessoa *cadastro) {
 
-	printf ("%s\n", cadastro->nome);
-	printf ("%02d/%02d/%d\n", cadastro->dataNasc[0], cadastro->dataNasc[1], cadastro->dataNasc[2]);
-	printf ("%d\n", cadastro->telefone);
-	printf ("\n");
+	printf("%s\n", cadastro->nome);
+	printf("%02d/%02d/%d\n", cadastro->dataNasc[0], cadastro->dataNasc[1],
+			cadastro->dataNasc[2]);
+	printf("%d\n", cadastro->telefone);
+	printf("\n");
 }

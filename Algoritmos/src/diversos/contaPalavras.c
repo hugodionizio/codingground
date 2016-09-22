@@ -2,34 +2,34 @@
 #include <string.h>
 
 int main() {
-    //Variáveis de contagem
-    int comecouPalavra = 0, numPalavras = 0, numLinhas = 0, numCaracteres = 0;
-    //Variável usada como descritor do arquivo em disco
-    FILE *descritor;
-    //Variável que irá receber a string de onde está o arquivo
-    char arquivo[50];
-    //Variável que armazena caracter para processamento
-    char *caracter;    
-    printf("Digite o arquivo que deseja abrir: ");
-    gets(arquivo);
-    descritor = fopen(arquivo, "r");
-    while (!feof(descritor)) {
-          fread(caracter, 1, 1, descritor);
-          numCaracteres++;
-          if  ((*caracter!=' ') && (*caracter!='\n') && (!comecouPalavra)) {
-             comecouPalavra = 1;
-          }
-          if  (((*caracter==' ') || (*caracter == '\n')) && (comecouPalavra)) {
-             comecouPalavra = 0;
-             numPalavras++;
-          }
-          if (*caracter=='\n') {
-             numLinhas++;
-             }
-   
-   }           
-   printf("\n O número de palavras do arquivo é: %d", numPalavras);
-   printf("\n O número de linhas do arquivo é: %d", numLinhas);
-   printf("\n O número de caracteres do arquivo é: %d", numCaracteres);
-   getchar();
+	//Variï¿½veis de contagem
+	int comecouPalavra = 0, numPalavras = 0, numLinhas = 0, numCaracteres = 0;
+	//Variï¿½vel usada como descritor do arquivo em disco
+	FILE *descritor;
+	//Variï¿½vel que irï¿½ receber a string de onde estï¿½ o arquivo
+	char arquivo[50];
+	//Variï¿½vel que armazena caracter para processamento
+	char *caracter;
+	printf("Digite o arquivo que deseja abrir: ");
+	gets(arquivo);
+	descritor = fopen(arquivo, "r");
+	while (!feof(descritor)) {
+		fread(caracter, 1, 1, descritor);
+		numCaracteres++;
+		if ((*caracter != ' ') && (*caracter != '\n') && (!comecouPalavra)) {
+			comecouPalavra = 1;
+		}
+		if (((*caracter == ' ') || (*caracter == '\n')) && (comecouPalavra)) {
+			comecouPalavra = 0;
+			numPalavras++;
+		}
+		if (*caracter == '\n') {
+			numLinhas++;
+		}
+
+	}
+	printf("\n O nï¿½mero de palavras do arquivo ï¿½: %d", numPalavras);
+	printf("\n O nï¿½mero de linhas do arquivo ï¿½: %d", numLinhas);
+	printf("\n O nï¿½mero de caracteres do arquivo ï¿½: %d", numCaracteres);
+	getchar();
 }

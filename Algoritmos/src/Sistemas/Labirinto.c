@@ -35,13 +35,13 @@ void inicializarNoCabeca(Matriz* m) {
 	m->dir = NULL;
 	m->esq = NULL;
 	m->visitado = 1;
-
 }
 
 /*
  FUNÇÃO: armazenar()
  */
 void armazenar(Matriz *m, int x, int y, int valor) {
+
 	Matriz *p = m->dir; //Ponteiro que percorre a matriz, ele recebe o valor de inicio_linha, que é global.
 	int i; //Para iteração.
 
@@ -68,11 +68,15 @@ void armazenar(Matriz *m, int x, int y, int valor) {
 	p->visitado = 1;
 
 }
-
 /*
  FUNÇÃO: labirinto()
+
+
+
  */
+
 void labirinto(Matriz *m, int x, int y) {
+
 	int randomico, sucesso = 0;
 	int i;
 	int sort[4]; /*Vetor que controla os números que já foram sorteados*/
@@ -109,6 +113,7 @@ void labirinto(Matriz *m, int x, int y) {
 		randomico = (rand() % 4) + 1;
 
 		switch (randomico) {
+
 		case 1:  //Verifica o de cima e ve se pode ir
 			if (auxcima != NULL && auxcima->visitado == 0) {
 				armazenar(m, x - 1, y, 7);
@@ -121,7 +126,9 @@ void labirinto(Matriz *m, int x, int y) {
 			break;
 
 		case 2: // Verifica o da direita
+
 			if (auxdir != NULL && auxdir->visitado == 0) {
+
 				armazenar(m, x, y + 1, 5);
 				armazenar(m, x, y + 2, 5);
 				//celula_atual = auxdir;
@@ -132,9 +139,11 @@ void labirinto(Matriz *m, int x, int y) {
 
 			}
 			sort[1] = 1;
+
 			break;
 
 		case 3:
+
 			if (auxbaixo != NULL && auxbaixo->visitado == 0) {
 
 				armazenar(m, x + 1, y, 7);
@@ -142,12 +151,16 @@ void labirinto(Matriz *m, int x, int y) {
 				labirinto(m, x + 2, y);
 			} else {
 				labirinto(m, x, y);
+
 			}
 			sort[2] = 1;
+
 			break;
 
 		case 4:
+
 			if (auxesq != NULL && auxesq->visitado == 0) {
+
 				armazenar(m, x, y - 1, 5);
 				armazenar(m, x, y - 2, 5);
 
@@ -166,7 +179,10 @@ void labirinto(Matriz *m, int x, int y) {
 
 /*
  FUNÇÃO:declarar_matriz()
+
+
  */
+
 void declarar_matriz(Matriz *m, int tam_x, int tam_y) {
 	int i, j;
 	Matriz *p;
@@ -189,6 +205,7 @@ void declarar_matriz(Matriz *m, int tam_x, int tam_y) {
 
 	/*A partir daqui são criados os outros nós da primeira linha da matriz*/
 	for (j = 2; j <= (2 * tam_y + 1); j++) {
+
 		node *novo;
 		novo = (node*) malloc(sizeof(node));
 		p->dir = novo;
@@ -205,6 +222,7 @@ void declarar_matriz(Matriz *m, int tam_x, int tam_y) {
 	//Esse é o último da linha, então a direita dele aponta pra NULL
 	p->dir = NULL;
 	if ((2 * tam_x + 1) != 1) {
+
 		//Criar o primeiro nó da linha de baixo
 		p = inicio_linha;
 		node *novo;
@@ -308,7 +326,9 @@ void declarar_matriz(Matriz *m, int tam_x, int tam_y) {
 		//Agora p já se encontra no elemento a11 da matriz.
 
 		m = inicio_linha;
+
 	}
+
 }
 
 /*
@@ -325,6 +345,7 @@ void declarar_matriz(Matriz *m, int tam_x, int tam_y) {
 
  Já vai salvando também no arquivo labirinto.txt
  */
+
 void imprimir(Matriz *m) {
 	FILE *rec;
 	rec = fopen("labirinto.txt", "w");
@@ -376,11 +397,16 @@ void imprimir(Matriz *m) {
 		printf("\n");
 	}
 	fclose(rec);
+
 }
 
 /*FUNÇÃO: obter_valor()
+
+
  */
+
 int obter_valor(Matriz *m, int x, int y) {
+
 	Matriz *p = m->dir; //Ponteiro que percorre a matriz, ele recebe o valor de inicio_linha, que é global.
 	int i; //Para iteração.
 
@@ -390,6 +416,7 @@ int obter_valor(Matriz *m, int x, int y) {
 			break;
 
 		p = p->baixo;
+
 	}
 
 	//Percorrendo as colunas
@@ -398,14 +425,16 @@ int obter_valor(Matriz *m, int x, int y) {
 			break;
 
 		p = p->dir;
+
 	}
 
 	//Saiu do for, então já está no lugar certo.
 
 	return p->valor;
+
 }
 
-int testeLabirinto(int argc, char **argv) {
+int mainLabirinto (int argc, char **argv) {
 	srand(time(NULL));
 
 	//Criando o ponteiro para a pilha
@@ -434,5 +463,6 @@ int testeLabirinto(int argc, char **argv) {
 	execlp("gedit", " ", "labirinto.txt", NULL);
 
 	return 0;
+
 }
 

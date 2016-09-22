@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main () {
+int main() {
 	const int tamControl = TAM_CONTROL;
 //	char *controle = malloc(tamControl*sizeof(char));
 	char controle;
@@ -11,9 +11,9 @@ int main () {
 	do {
 //		if (controle == '\n') continue;
 //		else {
-			printf ("\nControle atual = %c.\nDigite um novo controle: ", controle);
-			scanf ("%c", &controle);
-			getchar();
+		printf("\nControle atual = %c.\nDigite um novo controle: ", controle);
+		scanf("%c", &controle);
+		getchar();
 //		}
 	} while (controle != 'n' && controle != 'N');
 
