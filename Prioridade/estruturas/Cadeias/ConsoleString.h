@@ -7,7 +7,7 @@
 // Herança de bibliotecas
 #include <stdio.h> // printf()
 
-#include "../Cadeias/String.h"
+#include "../estruturas/Cadeias/String.h"
 #include "ConioX.h" // implements ConioX
 
 // Seção de Variáveis Globais

@@ -1,4 +1,4 @@
-#include "../Listas/Lista.h"
+#include "Listas/Lista.h"
 
 // Estrutura de uma Fila
 struct _FilaArr {
