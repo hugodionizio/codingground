@@ -1,0 +1,20 @@
+struct Celula {
+	int info;
+
+	struct Celula *prox;
+};
+typedef struct Celula Celula;
+
+void MF(int x, Celula *cel) {
+	Celula *aux = cel, *auxP, *auxU;
+
+	while (x != aux->info && aux->prox != NULL) {
+		auxP = aux;
+		aux = aux->prox;
+		auxU = aux->prox;
+	}
+	if (x != celula->info && celula->prox != NULL) {
+		auxP->prox = auxU;
+		aux->prox = celula;
+	}
+}

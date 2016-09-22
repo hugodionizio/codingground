@@ -10,8 +10,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "Auxiliares/trocar.h"
-#include "Prioridade/Prioridade.h"
+#include "../estruturas/Auxiliares/trocar.h"
+#include "../estruturas/Prioridade/Prioridade.h"
 //#include "Prioridade.h"
 //#include "trocar.c"
 //#include "piso.c"

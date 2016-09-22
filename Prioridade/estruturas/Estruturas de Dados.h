@@ -1,0 +1,571 @@
+// PONTEIROS EM C
+int *pi
+float *pf
+char *pc
+
+x = 5
+printf("%d\n", x)
+funct(x)
+printf("%d\n", x)
+
+funct(y)
+int y
+{
+++y
+printf("%d\n", y)
+} /* end funct */
+
+1
+2
+3
+4
+x = 5
+printf("%d\n", x)
+funct(&x)
+printf("%d\n", x)
+5
+funct(py)
+6 int *py
+7
+{
+8
+++(*py)
+9
+printf("%d\n", *py)
+10} /* end funct */
+
+// USANDO VETORES UNIDIMENSIONAIS
+#define NUMELTS100
+aver()
+{
+int num[NUMELTS]
+int i
+int total
+float avg
+float diff
+/* vetor de numeros
+/*
+soma dos numeros
+/*
+media dos numeros
+/* diferença entre cada
+/* numero e a media
+*/
+*/
+*/
+*/
+*/
+total = 0
+for (i = 0; i < NMLSi++)
+UET
+{
+/*le os números no vetor e os soma*/
+scanf("%d", &num[i])
+total+=num[i]
+}/*fim for */
+avg = total/NUMELTS
+/* calcula amedia
+*/
+printf("Xn diferença dos números")
+/* imprime titulo */
+/* imprime cada numero e sua diferença
+*/
+for (i = 0; i < NUMELTS?i++){
+diff = num[i]-avg
+
+printf("\n%d%d", num[i], diff)
+} /* fim for */
+printf("\nA media, : %d", avg)
+}/* fim a ver */
+
+switch(yr){
+case 0: scanf("%d", &s0)
+case 1: scanf("%d", &sl)
+case 9: scanf("%d", &s9)
+} /* fim switch */
+
+// VETORES COMO PARÂMETROS
+float avg(a, size)
+float a[]
+/* nenhuma faixa especificada */
+int size
+{
+int i
+float sum
+sum = 0
+for (i = 0; i < size; i++)
+sum+= a[i]
+return(sum/size)
+} /* fim avg */
+No programa principal, poderíamos ter escrito:
+#define ARRANGE100
+float a[ARRANGE]
+avg(a, ARRANGE)
+
+// OPERAÇÕES COM STRINGS DE CARACTERES
+#de£ine STRSIZE 90
+char string[STRSIZE]
+// A primeira função encontra o real tamanho de uma string.
+strlen(string)
+char string[]
+{
+int i
+for (i = 0; string[i]! = '\0'; i++)
+return(i)
+}
+/* fim strlen */
+
+strpos(sl, s2)
+char sl[], s2[]
+{
+int len1, Ien2
+int i, j1, j2
+}
+lenl = strlen(sl)
+Ien2 = strlen(s2)
+for (i=0; i + len2 < = lenl; i++)
+for (jl = i, j2 = 0; j2 < = Ien2 && sl[jl] == s2[j2]
+jl++, J2++)
+if(j2 == Ien2)
+return(i)
+return(-1)
+/* fim strpos */
+
+strcat(sl, s2)
+char s1[], s2[]
+{
+int i, j
+for (i = 0; sl[i]!= '\0'; i++)
+r
+for (j = 0; s2[j] != '\0'; sl[i++] = s2[j++])
+r
+}
+/*fimstrcat*/
+
+substr(sl, i, j, s2)
+char sl[], s2[]
+int i, j
+{
+int k, m
+
+for (k = i, m = 0; m < j; s2[m++] = sl[k++])
+
+s2[m] = '\0'
+}
+/*fimsubstr*/
+
+// 1.3. ESTRUTURAS EM C
+struct{
+char first[10]
+char midinit
+char last[20]
+} sname, ename
+
+typedef struct{
+char first[10]
+char midinit
+char last[20]
+}NAMETYPE
+
+
+// OPERAÇÕESSOBREÁRVORESBINÁRIAS
+q = father(p)
+if(q==null)
+return(false)
+if(left(q)==p)
+return(true)
+return(false)
+/*papontaparaaraiz*/
+
+if(father(p)==null)
+return(null)
+/*papontaparaaraiz*/
+if
+(isleft(p))
+return(right(father(p)))
+return(left(father(p)))
+
+// APLICAÇÕESDEÁRVORESBINÁRIAS
+/*leoprimeironumeroeoinsere*/
+/*
+naarvorebinariadenó
+unico
+*/
+scanf("%d", &number)
+tree = maketree(number)
+while(hánúmerosnaentrada){
+scanf("id", &number)
+p = q = tree
+while(number/=info(p)&&q!=NULL){
+P = q
+}
+if(number < info(p))
+q = left(p)
+else
+q = right(p)
+}/*fimwhile*/
+if(number==info(p))
+printf("%d%s\n", number, "estahrepetido")
+/*insereonumeroadireitaouesquerdadep*/
+elseif(number < info(p))
+setleft(p, number)
+else
+setright(p, number)
+/*fimwhile*/
+
+// REPRESENTAÇÃODENÓSDEÁRVORESBINÁRIAS
+#defineNUMNODES500
+structnodetype{
+int info
+int left
+int right
+int father
+}
+structnodetypenode[numnodes]
+
+int avail, i
+{
+avail = 1
+for (i=0; i < NUMNODES; i++)
+node[i].left = i+1
+node[NUMNODES-1].left = 0
+}
+
+structnodetype{
+int info
+structnodetype*left
+structnodetype*rigth
+structnodetype*father
+}
+typedefstructnodetype*NODEPTR
+
+NODEPTRmaketree(x)
+int x
+{
+NODEPTRp
+}
+p = getnode()
+p->info = x
+p->left = NULL
+p->right = NULL
+return(p)
+/*fimmaketree*/
+
+setleft(p, x)
+NODEPTRp
+int x
+{
+if(p==NULL)
+printf("insercaovazia\n")
+elseif(p->left!=NULL)
+printf("insercaoincorreta\n")
+else
+p->left = maketree(x)
+/*fimsetleft*/
+
+structnodetype{
+int info
+structnodetype*left
+structnodetype*right
+}
+typedefstructnodetype*NODEPTR
+main()
+{
+NODEPTRptree
+NODEPTRp, q
+
+int number
+}
+scanf("%d", &number)
+ptree = maketree(number)
+while(scanf("%d", &number)!=EOF){
+p = q = ptree
+while(number!=p->info&&q!=NULL){
+p = q
+if(number < p->info)
+q = p->left
+else
+q = p->right
+}/*fimwhile*/
+if(number==p->info)
+printf("%destarepetido\n", number)
+.elseif(number < p->info)
+setleft(p, number)
+else
+setright(p, number)
+}/*fimwhile*/
+/*fimmain*/
+
+// NÓSINTERNOSEEXTERNOS
+#defineNUMNODES500
+structnodetype{
+int info
+int used
+}node[NUMNODES]
+main()
+{
+int p, q, number
+scanf("%d", &number)
+maketree(number)
+while(scanf("%d", &number)!=EOF){
+p = q = 0
+while(g < NUMNODES&&node[q].used&&number!=
+node[p].info){
+p = q
+if(number < node[p].info)
+q = 2*p+1
+else
+q = 2*p+2
+}/*fimwhile*/
+/*seonumeroestivernaarvoreentaoehrepetido*/
+if(number==node[p].info)
+printf("%destareptido\n", number)
+elseif(number < node[p].info)
+setleft(p, number)
+else
+setright(p, number)
+}/*fimwhile*/
+}I*fimmain*/
+maketree(x)
+int x
+{
+}
+int p
+node[0].info = x
+node[0].used = TRUE
+/*Aarvoreconsisteno0isolado.*/
+I*
+Todososoutrosnossaonulos
+*/
+for (p=l; p < NUMNODES; p++)
+node[p].used = FALSE
+•/*fimmaketree*/
+setleft(p, x)
+int p, x
+{
+int q
+q = 2*p+1
+/*qehaposicaodo*/
+/*filhodaesquerda*/
+if(q>=NUMNODES)
+error("estourodovetor")
+elseif(node[q].used)
+error("insercaoincorreta")
+else{
+node[q].info = x
+node[q].used = TU
+RE
+}/*fimif*/
+/*fimsetleft*/
+
+// PERCURSOSDEARVORESBINÁRIASEMC
+pretrav(tree)
+NODEPTRtree
+{
+if(tree!=NULL){
+printf("%d\n", tree->info)
+/*visitaaraiz
+pretrav(tree->left); /*percorresubarvoreesq
+pretrav(tree->right); /*percorresubarvoredir
+}/*fimif*/
+}/*fimpretrav*I
+intrav(tree)
+NODEPTRtree
+{
+if(tree!=NULL){
+intrav(tree->left)
+/*percorresubarvoreesq
+printf("%d\n", tree->info); /*visitaaraiz
+intrav(tree->right)
+/*percorresubarvoredir
+}/*fimif*/
+}/*fimintrav*/
+*/
+*/
+*/
+*/
+*/
+*/
+posttrav(tree)
+NODEPTRtree
+{
+if(tree!=NULL){
+posttrav(tree->left)
+/*percorresubarvoreesq*/
+posttrav(tree->right); /*percorresubarvoredir*/
+printf("%d\n", tree->info)
+/*visitaaraiz
+*/
+}/*fimif*/
+}
+/*fimposttrav*/
+
+#
+defineMAXSTACK
+intrav2(tree)
+100
+
+NODEPTRtree
+{
+structstack{
+int top
+NODEPTRitem[MAXSTACK]
+}s
+NODEPTRp
+s.top = -1
+p = tree
+do{
+/*percorreosdesviosesqomaximopossível*/
+/*
+salvandoponteirosp/nospassados
+*/
+while(p!=NULL){
+push(s, p)
+p = p->left
+}/*fimwhile*/
+/*verificatermino*/
+if(!empty(s)){
+/*nestepontoasubarvoreesqestahvazia*/
+p = pop(s)
+printf("%d\n", p->info); /*visitaaraiz*/
+p = p->right; /*percorresubarvoredir*/
+}/*fimif*/
+}while(!empty(s)&&p!=NULL)
+}/*fimintrav2*/
+
+// ÁRVORESBINÁRIASENCADEADAS
+structnodetype{
+int info
+structnodetype*left
+structnodetype*right
+int rthread
+/*
+/*
+/*
+/*
+/*
+}
+.typedefstruct
+nodetype
+ponteirop/filhoesq*/
+ponteirop/filhodir*l
+rthreadserahTRUEse*/
+rightfor NULLou
+*/
+umalinhanao-NULL
+*/
+*NODEPTR
+Apresentamosumarotinaparaimplementaropercursoemordem
+deumaárvorebináriaencadeadaàdireita.
+intrav3(tree)
+NODEPTRtree
+{
+NODEPTRp, q
+p = tree
+do{
+q = NULL
+while(p!=NULL){
+/*percorreramificação
+q = p
+p = p->left
+}/*fimwhile*/
+if(q!=NULL){
+printf("%d\n", q->info)
+p = q->right
+while(q->rthread&&p!=NULL){
+printf("%d\n", p->info)
+q = p
+}
+esq*/
+p = p->right
+}/*fimwhile*/
+}/*fimif*/
+}while(q!=NULL)
+/*fimintrav3*/
+
+NODEPTRmaketree(x)
+int x
+{
+NODEPTRp
+}
+p = getnode()
+p->info = x
+p->left = NULL
+p->right = NULL
+p->rthread = TRUE
+return(p)
+/*fimmaketree*/
+setleft(p, x)
+NODEPTRp
+int x
+{
+NODEPTRq
+}
+if(p==NULL)
+error("insercaovazia")
+elseif(p->left!=NULL)
+error("insercaoilegal")
+else{
+q = getnode()
+q->info = x
+p->left = q
+q->left = NULL
+/*osucessoremordemdenode(q)ehnode(p)*/
+q->right = p
+q->rthread = TRUE
+}/*fimif*/
+/*fimsetleft*/
+setright(p, x)
+NODEPTRp
+int x
+{
+NODEPTRq, r
+if(p==NULL)
+error("insercaovazia")
+elseif(!p->rthread)
+error("insercaoilegal")
+else{
+q = getnode()
+q->info = x
+/*salvaosucessoremordemdenode(p)*/
+r = p->right
+p->right = q
+p->rthread = FALSE
+q->left = NULL
+1*0sucessoremordemdenode(q)eh*/
+/*osucessoranteriordenode(p)
+*/
+q->right = r
+}
+q->rthread = TRUE
+}/*fimelse*/
+/*fimsetright*/
+
+intrav4(tree)
+int tree
+{
+int p, q
+p = tree
+do{
+/*percorreligacoesaesqmantendoqatrasdep*/
+q = 0
+while(p1=0){
+q = p
+p = node[p].left
+}/*fimwhile*/
+if(q!=0){
+/*verificatermino*/
+printf("%d\n", node[q].info)
+p = node[q].right
+while(p < 0){
+q = -p
+printf("%d\n", node[q].info)
+p = node[q].right
+}/*fimwhile*/
+}/*fimif*
+/*percorresubarvoredireita*/
+}
+}while(q!=0)
+/*fimintrav4*/
+
+

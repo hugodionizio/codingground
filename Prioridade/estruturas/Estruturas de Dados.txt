@@ -1,0 +1,993 @@
+Data: 07-03-2014 21:04:07
+<NomeDoAlgoritmo> // Algoritmo 	 ; Página 	\n\tEntradas: \n\tSaídas: \n\tVariáveis auxiliares: \n\n\tinício\n\tfim\n
+
+InicializarLLArr // Algoritmo 3.1; Página 56
+InserirIniLLArr // Algoritmo 3.2; Página 58
+InserirFimLLArr // Algoritmo 3.3; Página 60
+InserirLLArrPosK // Algoritmo 3.4; Página 62
+InserirLLArrPosKOt // Algoritmo 3.5; Página 63
+RemoverKLLArr // Algoritmo 3.6; Página 64
+AcessarKLLArr // Algoritmo 3.7; Página 66
+PosValLLArr // Algoritmo 3.8; Página 67
+PosValLLArrOrd // Algoritmo 3.9; Página 68
+IniLLArrDescr // Algoritmo 3.10; Página 72
+InserirLLArrDescr // Algoritmo 3.11; Página 75
+RemoverKLLArrDesc // Algoritmo 3.12; Página 77
+AcessarKLLArrDesc // Algoritmo 3.13; Página 78
+PosValLLArrDesc // Algoritmo 3.14; Página 79
+InserirLLCirArrPosK // Algoritmo 3.15; Página 82
+RemoverKLLCirArr // Algoritmo 3.16; Página 84
+AcessarKLLArrDesc // Algoritmo 3.17; Página 86
+PosValLLCirArr // Algoritmo 3.18; Página 87
+InicializarLLEnc // Algoritmo 3.19; Página 89
+InserirIniLLEnc // Algoritmo 3.20; Página 91
+InserirFimLLEnc // Algoritmo 3.21; Página 92
+InserirLLEncPosK // Algoritmo 3.22; Página 94
+RemoverKLLEnc // Algoritmo 3.23; Página 96
+AcessarKLLEnc // Algoritmo 3.24; Página 97
+DestruirLLEnc // Algoritmo 3.25; Página 97
+InserirKLLEncCir // Algoritmo 3.26; Página 99
+RemoverKLLEncCir // Algoritmo 3.27; Página 101
+ImprimirLLEncCir // Algoritmo 3.28; Página 102
+InserirKLLDupEnc // Algoritmo 3.29; Página 104
+RemoverKLLDupEnc // Algoritmo 3.30; Página 107
+ImprimirLLDupEncInv // Algoritmo 3.31; Página 108
+InserirFimLLDupEncDesc // Algoritmo 3.32; Página 109
+InserirFimLLDupEncCir // Algoritmo 3.33; Página 111
+RemoverUltLLDupEncCir // Algoritmo 3.34; Página 113
+AcessarKLLDupEncCirDesc // Algoritmo 3.35; Página 114
+InicializarPilhaArr // Algoritmo 4.1; Página 130
+InserirPilhaArr // Algoritmo 4.2; Página 130
+RemoverPilhaArr // Algoritmo 4.3; Página 131
+ConsultarPilhaArr // Algoritmo 4.4; Página 132
+CriarPilhaEnc // Algoritmo 4.5; Página 133
+InserirPilhaEnc // Algoritmo 4.6; Página 134
+RemoverPilhaEnc // Algoritmo 4.7; Página 134
+ConsultarPilhaEnc // Algoritmo 4.8; Página 135
+Desempilhar // Algoritmo 4.9; Página 136
+DestruirPilhaEnc // Algoritmo 4.10; Página 136
+InicializarFilaArr // Algoritmo 4.11; Página 140
+InserirFilaArr // Algoritmo 4.12; Página 141
+RemoverFilaArr // Algoritmo 4.13; Página 142
+ConsultarFilaArr // Algoritmo 4.14; Página 142
+CriarFilaEnc // Algoritmo 4.15; Página 144
+InserirFilaEnc // Algoritmo 4.16; Página 144
+RemoverFilaEnc // Algoritmo 4.17; Página 145
+ConsultarFilaEnc // Algoritmo 4.18; Página 146
+DestruirFilaEnc // Algoritmo 4.19; Página 146
+InicializarDequeArr // Algoritmo 4.20; Página 149
+InserirIniDequeArr // Algoritmo 4.21; Página 149
+RemoverFimDequeArr // Algoritmo 4.22; Página 150
+ConsultarMaiorDequeArr // Algoritmo 4.23; Página 151
+CriarDequeEnc // Algoritmo 4.24; Página 152
+InserirDequeEnc // Algoritmo 4.25; Página 153
+RemoverDequeEnc // Algoritmo 4.26; Página 154
+ConsultarDequeEnc // Algoritmo 4.27; Página 155
+CriarArvore // Algoritmo 6.1; Página 195
+AlocarRaiz // Algoritmo 6.2; Página 196
+InserirFilhoEsq // Algoritmo 6.3; Página 197
+RemoverFolha // Algoritmo 6.4; Página 198
+PrefixadoEsq // Algoritmo 6.5; Página 204
+Localizar(Função) // Algoritmo 6.6; Página 204
+Pós-FixadoEsq // Algoritmo 6.7; Página 206
+PrefixadoEsqRec // Algoritmo 6.8; Página 207
+Pós-FixadoEsqRec // Algoritmo 6.9; Página 208
+CentralEsqRec // Algoritmo 6.10; Página 208
+ConstruirArv // Algoritmo 6.11; Página 210
+FazerListaDeArv // Algoritmo 6.12; Página 212
+ValorEA(Função) // Algoritmo 6.13; Página 213
+InserirABP(Função) // Algoritmo 6.14; Página 217
+RemoverABP // Algoritmo 6.15; Página 222
+BuscarABP(Função) // Algoritmo 6.16; Página 224
+BuscarABPRec(Função) // Algoritmo 6.17; Página 224
+RotaçãoDireitaAVL // Algoritmo 6.18; Página 229
+RotaçãoEsquerdaAVL // Algoritmo 6.19; Página 231
+RotaçãoDuplaDireitaAVL // Algoritmo 6.20; Página 234
+RotaçãoDuplaEsquerdaAVL // Algoritmo 6.21; Página 236
+InserirAVL // Algoritmo 6.22; Página 237
+Huffman // Algoritmo 6.23; Página 240
+
+/*
+move o comprimento
+*/
+z = cl + c2;
+MOVE(z, c 3 , 1 ) ;
+/* move a primeira string
+*/
+for (i = 1; i <= c l ; MOVE(cl[i], c 3 [ i ] , 1);
+/* move a segunda string
+*/
+for ( i = 1; i <= c2) {
+x = cl + i ;
+M0VE(c2[i], c 3 [ x ] , 1);
+} /* fim for */
+
+
+MOVEVAR(c2, c 3 [ c l ] ) ;
+MOVEVAR(cl, c 3 ) ;
+z = cl + c 2 ;
+MOVE(z, c 3 , 1 ) ;
+/*
+move a segunda string
+*/
+/*
+move a primeira string
+*/
+/* atualiza o tamanho do resultado */
+
+//-----------
+
+i = 0;
+while (source[i] != '\0')
+{
+MOVE(source[i], d e s t [ i ] , 1);
+i++;
+}
+d e s t [ i ] = '\O';
+/* encerra a string de destino com '\0' */
+Para implementar a operação de concatenação, CONCATVAR(cl ,c2,c3),
+podemos escrever:
+i = 0;
+/* move a primeira string */
+while ( c l [ i ] != '\O')
+{
+MOVE(cl[Í], c 3 [ i ] , 1);
+i++;
+}
+/* move a segunda string */
+j = 0;
+while ( c 2 [ j ] != '\0')
+MOVE(C2[j++],
+c3[i++],
+1);
+/* encerra a string de destino com um \0 */
+c3[i] = '\0';
+
+//---------------
+
+/*definição de valor*/
+abstract typedef <integer, integer> RATIONAL;
+condition RATIONAL[1] <> 0;
+/*definicao de operador*/
+abstract RATIONAL makerational(a,b)
+int a,b;
+precondition b<>0;
+postcondition makerational[0] == a;
+makerational[l] == b;
+abstract RATIONAL add(a,b)
+/* w r i t t e n a + b */
+RATIONAL a,b;
+postcondition a d d [ l ] = = a [ l ] * b [ l ] ;
+add[0] == a [ 0 ] * b[l] + b[0] * a [ 1 ];
+abstract RATIONAL mult(a,b)
+RATIONAL a,b;
+postcondition m u l t [ 0 ] == a [ 0 ] * b [ 0 ] ;
+mult[l] == a [ l ] * b [ l ] ;
+/* w r i t t e n
+a*b */
+abstract equal(a,b)
+/* w r i t t e n a==b */
+RATIONAL a,b;
+postcondition equal == ( a [ 0 ] * b [ l ] == b [ 0 ] * a [ l ] ) ;
+
+//------------------------
+abstract RATIONAL mult(a,b)
+RATIONAL a,b;
+postcondition mult[0] == a[0]*b[0];
+mult[l]
+==
+a[l]*b[l];
+I* written a*b
+*/
+
+//----------------------
+/*definicao do valor*/
+abstract typedef<int, int> RATIONAL;
+condition RATIONAL[1] <> 0;
+/*definicao do operador*/
+abstract equal(a,b)
+RATIONAL a,b;
+postcondition equal = = ( a [ 0 ] * b [ l ]
+/* written a == b*I
+== b [ 0 ] * a [ l ] ) ;
+abstract
+RATIONAL makerational(a,b)
+I* w r i t t e n [ a , b ] * /
+int a,b;
+precondition b <> 0;
+postcondition makerational[0]*b == a*makerational[1]
+abstract RATIONAL add(a,b)
+I* written a + b*I
+RATIONAL a,b;
+postcondition add = =
+(a[0]
+* b[l]
++ b[0]
+* a[l]),
+a[l]*b[l]]
+abstract
+RATIONAL
+mult{a,b)
+RATIONAL a,b;
+p o s t c o n d i t i o n m u l t == [ a [ 0 ]
+/* written a * b */
+* b[0],
+a[l]
+* b[l]
+]
+
+//----------------------------
+abstract typedef «int» intseq;
+I* sequencia de inteiros de */
+/*
+qualquer tamanho
+*/
+abstract typedef <integer, char, float> seq3;
+/* sequencia de tam 3
+*/
+/* consistindo em um i n t e i r o , * /
+/* um caractere e um numero */
+/* de ponto flutuante
+*/
+abstract typedef «int, 10» intseq;
+/*sequencia
+de 10 inteiros */
+/* sequencia a r b i t r a r i a de */
+abstract typedef «,2» pair;
+/* */
+tamanho 2 
+
+//---------------------
+abstract typedef «char» STRING;
+abstract length(s)
+STRING s;
+postcondition length
+==
+len(s);
+abstract STRING concat(s1,s2)
+STRING s1, S2;
+postcondition concat == sl + s2;
+abstract
+STRING
+STRING s 1 ;
+int
+i,j;
+substr(s1,i,j)
+precondition 0 <= i < len(sl);
+0 <= j <= 2en(sl) - i;
+postcondition substr == sub(sl,i,j);
+abstract pos(sl,s2)
+
+//------------------
+abstract typedef «char» STRING;
+abstract length(s)
+STRING s;
+postcondition length
+==
+len(s);
+abstract STRING concat(s1,s2)
+STRING s1, S2;
+postcondition concat == sl + s2;
+abstract
+STRING
+STRING s 1 ;
+int
+i,j;
+substr(s1,i,j)
+precondition 0 <= i < len(sl);
+0 <= j <= 2en(sl) - i;
+postcondition substr == sub(sl,i,j);
+abstract pos(sl,s2)
+
+
+STRING s l , s 2 ;
+postcondition /*lastpos = len(sl) - Ien(s2) */
+((pos == -1) && ( f o r ( i = 0;
+i <= lastpos; i++)
+(s2 <> sub(sl,i,len(s2)))))
+II
+(( pos >= 0) && (pos <= lastpos)
+&& (s2 == sub(strl,posrlen(s2))
+&& ( f o r ( i = 1; i < pos; i++)
+(s2
+<>
+sub(si,i,len(s2)))));
+
+//------------------
+// O VETOR COMO UM TDA
+abstract typedef «eltype, ub» ARRTYPE(ub, eltype);
+condition type(ub) == int}
+abstract eltype extract(a,i)
+/* written a[i]
+*/
+ARRTYPE(ub, eltype) a;
+int i;
+precondition 0 <= i < ub;
+postcondition extract == ai
+abstract store ( a , l , e l t )
+/* written a[i] = elt */
+ARRTYPE (ub, eltype) a;
+int i ;
+eltype elt',
+precondition 0 <= i < ub;
+postcondition a[i] == elt;
+
+InicializarLLArr // Algoritmo 3.1; Página 56
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirIniLLArr // Algoritmo 3.2; Página 58
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirFimLLArr // Algoritmo 3.3; Página 60
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirLLArrPosK // Algoritmo 3.4; Página 62
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirLLArrPosKOt // Algoritmo 3.5; Página 63
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverKLLArr // Algoritmo 3.6; Página 64
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+AcessarKLLArr // Algoritmo 3.7; Página 66
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+PosValLLArr // Algoritmo 3.8; Página 67
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+PosValLLArrOrd // Algoritmo 3.9; Página 68
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+IniLLArrDescr // Algoritmo 3.10; Página 72
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirLLArrDescr // Algoritmo 3.11; Página 75
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverKLLArrDesc // Algoritmo 3.12; Página 77
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+AcessarKLLArrDesc // Algoritmo 3.13; Página 78
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+PosValLLArrDesc // Algoritmo 3.14; Página 79
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirLLCirArrPosK // Algoritmo 3.15; Página 82
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverKLLCirArr // Algoritmo 3.16; Página 84
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+AcessarKLLArrDesc // Algoritmo 3.17; Página 86
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+PosValLLCirArr // Algoritmo 3.18; Página 87
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InicializarLLEnc // Algoritmo 3.19; Página 89
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirIniLLEnc // Algoritmo 3.20; Página 91
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirFimLLEnc // Algoritmo 3.21; Página 92
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirLLEncPosK // Algoritmo 3.22; Página 94
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverKLLEnc // Algoritmo 3.23; Página 96
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+AcessarKLLEnc // Algoritmo 3.24; Página 97
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+DestruirLLEnc // Algoritmo 3.25; Página 97
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirKLLEncCir // Algoritmo 3.26; Página 99
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverKLLEncCir // Algoritmo 3.27; Página 101
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ImprimirLLEncCir // Algoritmo 3.28; Página 102
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirKLLDupEnc // Algoritmo 3.29; Página 104
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverKLLDupEnc // Algoritmo 3.30; Página 107
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ImprimirLLDupEncInv // Algoritmo 3.31; Página 108
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirFimLLDupEncDesc // Algoritmo 3.32; Página 109
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirFimLLDupEncCir // Algoritmo 3.33; Página 111
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverUltLLDupEncCir // Algoritmo 3.34; Página 113
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+AcessarKLLDupEncCirDesc // Algoritmo 3.35; Página 114
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InicializarPilhaArr // Algoritmo 4.1; Página 130
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirPilhaArr // Algoritmo 4.2; Página 130
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverPilhaArr // Algoritmo 4.3; Página 131
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ConsultarPilhaArr // Algoritmo 4.4; Página 132
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+CriarPilhaEnc // Algoritmo 4.5; Página 133
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirPilhaEnc // Algoritmo 4.6; Página 134
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverPilhaEnc // Algoritmo 4.7; Página 134
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ConsultarPilhaEnc // Algoritmo 4.8; Página 135
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+Desempilhar // Algoritmo 4.9; Página 136
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+DestruirPilhaEnc // Algoritmo 4.10; Página 136
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InicializarFilaArr // Algoritmo 4.11; Página 140
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirFilaArr // Algoritmo 4.12; Página 141
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverFilaArr // Algoritmo 4.13; Página 142
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ConsultarFilaArr // Algoritmo 4.14; Página 142
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+CriarFilaEnc // Algoritmo 4.15; Página 144
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirFilaEnc // Algoritmo 4.16; Página 144
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverFilaEnc // Algoritmo 4.17; Página 145
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ConsultarFilaEnc // Algoritmo 4.18; Página 146
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+DestruirFilaEnc // Algoritmo 4.19; Página 146
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InicializarDequeArr // Algoritmo 4.20; Página 149
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirIniDequeArr // Algoritmo 4.21; Página 149
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverFimDequeArr // Algoritmo 4.22; Página 150
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ConsultarMaiorDequeArr // Algoritmo 4.23; Página 151
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+CriarDequeEnc // Algoritmo 4.24; Página 152
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirDequeEnc // Algoritmo 4.25; Página 153
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverDequeEnc // Algoritmo 4.26; Página 154
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ConsultarDequeEnc // Algoritmo 4.27; Página 155
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+CriarArvore // Algoritmo 6.1; Página 195
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+AlocarRaiz // Algoritmo 6.2; Página 196
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirFilhoEsq // Algoritmo 6.3; Página 197
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverFolha // Algoritmo 6.4; Página 198
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+PrefixadoEsq // Algoritmo 6.5; Página 204
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+Localizar(Função) // Algoritmo 6.6; Página 204
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+Pós-FixadoEsq // Algoritmo 6.7; Página 206
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+PrefixadoEsqRec // Algoritmo 6.8; Página 207
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+Pós-FixadoEsqRec // Algoritmo 6.9; Página 208
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+CentralEsqRec // Algoritmo 6.10; Página 208
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ConstruirArv // Algoritmo 6.11; Página 210
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+FazerListaDeArv // Algoritmo 6.12; Página 212
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+ValorEA(Função) // Algoritmo 6.13; Página 213
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirABP(Função) // Algoritmo 6.14; Página 217
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RemoverABP // Algoritmo 6.15; Página 222
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+BuscarABP(Função) // Algoritmo 6.16; Página 224
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+BuscarABPRec(Função) // Algoritmo 6.17; Página 224
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RotaçãoDireitaAVL // Algoritmo 6.18; Página 229
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RotaçãoEsquerdaAVL // Algoritmo 6.19; Página 231
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RotaçãoDuplaDireitaAVL // Algoritmo 6.20; Página 234
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+RotaçãoDuplaEsquerdaAVL // Algoritmo 6.21; Página 236
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+InserirAVL // Algoritmo 6.22; Página 237
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
+
+Huffman // Algoritmo 6.23; Página 240
+	Entradas: 
+	Saídas: 
+	Variáveis auxiliares: 
+
+	início
+	fim
