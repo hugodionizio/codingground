@@ -1,34 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../Biblioteca/ArvoreTemp.h"
-
-struct CelulaTmp {
-	int num;
-
-	struct CelulaTmp *left;
-	struct CelulaTmp *right;
-};
-typedef struct CelulaTmp CelulaTmp;
-typedef CelulaTmp * PtCelulaTmp;
-
-struct Ponte {
-
-	CelulaTmp *CelulaTmp;
-	struct Tipo *next;
-};
-typedef struct Ponte Ponte;
-typedef Ponte * PtPonte;
-
-struct Descritor {
-	int tamanho;
-	int altura;
-};
-
-struct Raiz {
-	unsigned profundidade;
-};
-typedef struct Raiz Raiz;
-typedef Raiz * PtRaiz;
+#include "ArvoreTemp.h"
 
 void * test(void *data) {
 	return (void *)data;

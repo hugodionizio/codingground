@@ -6,7 +6,7 @@
  */
 #include <math.h>
 
-#include "../../estruturas/Prioridade/Prioridade.h"
+#include "Prioridade.h"
 #ifdef _WIN32
 # define WINDOWS
 #elif _WIN64

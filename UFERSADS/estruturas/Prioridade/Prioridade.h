@@ -8,27 +8,21 @@
 #ifndef ESTRUTURAS_PRIORIDADE_PRIORIDADE_H_
 #define ESTRUTURAS_PRIORIDADE_PRIORIDADE_H_
 
-enum bool {
-	false,
-	true
-};
-typedef enum bool bool;
+#include "../Cadeias/Vector.h"
 
 #define econd &&
 
-struct _T {
+typedef struct T {
 	int chave;
 	char processo;
-};
-typedef struct _T T;
+} T;
 
-struct _Desc {
+typedef struct Desc {
 	int memoria;
 	int celulas;
 
 	T *t;
-};
-typedef struct _Desc Desc;
+} Desc;
 
 //#include "../Auxiliares/trocar.h"
 

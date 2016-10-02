@@ -1,14 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../Cadeias/Vector.h"
 
 #define MAX_TREE_HT 100
 
-struct MH_Node {
+typedef struct RootNodes {
+
+} RootNodes;
+
+typedef struct MH_Node {
     char character;
     unsigned frequency;
     struct MH_Node *l, *r;
-};
-typedef struct MH_Node MH_Node;
+} MH_Node;
+MH_Node fila_vazia_prioridades_ascendentes;
+
 
 struct M_Heap {
     unsigned size;
@@ -17,7 +23,17 @@ struct M_Heap {
 };
 typedef struct M_Heap M_Heap;
 
-// Interface do código de Huffman
+// Interface do cÃ³digo de Huffman
+int maketree(int);
+int numItens(MH_Node);
+int pqmindelete(MH_Node);
+int info(int);
+int father(int);
+bool isleft(int);
+void pqinsert(MH_Node, int);
+char sequencia(int, char);
+void setleft(int, int);
+void setright(int, int);
 
 MH_Node* newNode (char character, unsigned frequency) {
     MH_Node* temp = (MH_Node *) malloc(sizeof(MH_Node));
@@ -167,7 +183,7 @@ void Huffman() {
     getchar();
 }
 
-int main () {
-    Huffman();
+int mainHuffman(int argc, char **argv) {
+	Huffman();
     return (0);
 }

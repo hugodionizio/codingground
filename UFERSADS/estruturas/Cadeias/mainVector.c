@@ -1,29 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#define repeat(n) for(i = 0; i < n; i++)
-#define criarVetor(n) n *aux = (n *)malloc(tam*sizeof(n)); vetor = aux;
-#define apontarVetor(n) pv = (n *)v.info;
-
-enum {BOOL, CHAR, INT, FLOAT, DOUBLE, COMPLEX};
-
-typedef enum {false, true} bool;
-
-struct complex {
-    int real;
-    int img;
-};
-typedef struct complex complex;
-typedef complex * PtComplex;
-
-struct Vector {
-    void *info;
-    unsigned size;
-    unsigned type;
-};
-typedef struct Vector Vector;
-typedef Vector * PtVector;
+#include "Vector.h"
 
 void inicializarVetor(Vector *v, char *elementos, int tipo) {
     void *vetor, *pos;

@@ -1,17 +1,12 @@
 #include <stdio.h>
 
-#include "Auxiliares/trocar.c"
-#include "Auxiliares/piso.c"
-#include "Prioridade/imprimir.c"
-#include "Prioridade/subir.c"
-#include "Prioridade/descer.c"
-#include "Prioridade/inserir.c"
-#include "Prioridade/remover.c"
-#include "Prioridade/construir.c"
+#include "../Auxiliares/trocar.h"
+#include "../Auxiliares/piso.h"
+#include "Prioridade.h"
 //#include "trocar.c"
 //#include "piso.c"
 
-int main() {
+int mainGerenciador(int argc, char **argv) {
 	int i = 0, j = 1, k[2];
 	T t[4];
 	Desc d;

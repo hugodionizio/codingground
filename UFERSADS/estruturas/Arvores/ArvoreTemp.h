@@ -11,61 +11,73 @@
 
 #define N 200
 #define PERMUTACOES 1000
-#include "VetorInt.h"
+#include "../Cadeias/Vector.h"
 
-// Converter int para bool
-// Lógico
-enum bool {
-	false,
-	true
-};
-typedef enum bool bool;
-
-struct Celula  {
+typedef struct Celula  {
 	//int dado;
 	void * dado; // Valor definido na implementação
 
 	struct Celula *proxima;
-};
-typedef struct Celula Celula;
+} Celula;
 typedef Celula * PtCelula;
 
 // Registro que armazena um valor (chave) e ponteiros para filhos do no
-struct NoAB {
+typedef struct NoAB {
 	int chave;
 
 	struct NoAB *fe, *fd; // Filhos esquerdo e direito
-};
-typedef struct NoAB NoAB;
+} NoAB;
 typedef NoAB * PtNoAB;
 
-struct No {
+typedef struct No {
 	int chave;
 	unsigned freq;
 
 	struct No *esq, *dir;
-};
-typedef struct No No;
+} No;
 typedef No * PtNo;
 
-struct _Pilha {
+typedef struct Pilha {
 	int tamanho; // Tamanho do arranjo ou encadeamento
 	int base; // Posição da base no arranjo
 	int topo; // Posição do topo no arranjo
 
 	Celula *celula; // Célula para arranjos ou encadeamento
-};
-typedef struct _Pilha Pilha;
+} Pilha;
 typedef Pilha * PtPilha;
 
-struct Fila {
+typedef struct Fila {
 	int tamanhoAtual;
 	PtCelula frente;
 	PtCelula fim;
 //	void * frente;
 //	void * fim;
-};
-typedef struct Fila Fila;
+} Fila;
+
+typedef struct CelulaTmp {
+	int num;
+
+	struct CelulaTmp *left;
+	struct CelulaTmp *right;
+} CelulaTmp;
+typedef CelulaTmp * PtCelulaTmp;
+
+typedef struct Ponte {
+
+	CelulaTmp *CelulaTmp;
+	struct Tipo *next;
+} Ponte;
+typedef Ponte * PtPonte;
+
+typedef struct Descritor {
+	int tamanho;
+	int altura;
+} Descritor;
+
+typedef struct Raiz {
+	unsigned profundidade;
+} Raiz;
+typedef Raiz * PtRaiz;
 
 // Protótipos
 bool InicializarPilha(Pilha *);

@@ -6,19 +6,13 @@
 
 // Seção de Variáveis Globais
 /* Estrutura de pilha */
-#ifndef __cplusplus
-	typedef enum {
-		false,
-		true
-	} bool;
-#endif
+#include "Vector.h"
 
-struct cel {
+typedef struct cel {
 	int valor; // Valor inteiro
 
 	struct cel *seg; // Célula para encadeamento
-};
-typedef struct cel Celula;
+} Celula;
 
 /* Estrutura de um pilha com descritor */
 struct _Pilha {
