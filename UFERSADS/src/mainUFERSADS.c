@@ -7,10 +7,13 @@
  */
 
 #include <stdio.h>
+#include "../estruturas/Hash/HashTable.h"
 
 int main(int argc, char **argv) {
 	printf("Hello World!\n");
-	printf("Hello Data Structures!");
+	printf("Hello Data Structures!\n\n");
+
+	mainHashTablePHenrique(argc, argv);
 
 	return (0);
 }

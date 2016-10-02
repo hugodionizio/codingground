@@ -1,8 +1,15 @@
-// Biblioteca: String.h
-// Função : Criar e manipular cadeias de caracteres
-// Camada de software: Interna
-// Autor(es) : SANTOS, Hugo Dionizio
-// Data : Qua Mar 05 19:41:39 2014 
+/*
+ * String.h
+ * Função : Criar e manipular cadeias de caracteres
+ * Camada de software: Interna
+ * Data : Qua Mar 05 19:41:39 2014
+ *
+ *  Created on: 02/10/2016
+ *      Authors: 
+ *				Hugo Dionizio Santos
+ */
+#ifndef STRING_H_
+#define STRING_H_
 
 // Herança de bibliotecas
 #include <string.h> // strlen(); strcpy(,)
@@ -10,48 +17,14 @@
 
 // Seção de Variáveis Globais
 // Estruturas de Dados
+#ifndef __cplusplus
+ typedef char * string;
+#endif
 
 // Interface da biblioteca
-char *inverterPalavra (int argc, char **argv, char *palavra2);
-
-// Seção de Implementação de Funções
-int testeString (int argc, char **argv) {
-
-	inverterPalavra (argc, argv, "órgão");
-
-	return (0);
-}
-
-// Seção de Funções Internas
-char *inverterPalavra (int argc, char **argv, char *palavra2) {
-	char *palavra, *inverso;
-	int tam, i;
-
-	if (argc > 1) {
-		tam = strlen(argv[1]);
-		palavra = argv[1];
-	}
-	else {
-		tam = strlen(palavra2);
-		palavra = palavra2;
-	}
-	tam = strlen(palavra);
-	i = tam - 1;
-	inverso = (char *)malloc(tam*sizeof(char));
-
-	while (i >= 0) {
-		if (palavra[tam-i-1] > 0)
-			inverso[i] = palavra[tam-i-1];
-		else {
-			inverso[i-1] = palavra[tam-i-1];
-			inverso[i] = palavra[tam-i];
-			i--;
-			}
-		i--;
-	}
-	inverso[tam] = '\0';
-
-	return inverso;
-}
+char *inverterPalavra (int, char **, char *);
+int testeString (int, char **);
 
 // Fim da biblioteca String.h
+
+#endif /* STRING_H_ */

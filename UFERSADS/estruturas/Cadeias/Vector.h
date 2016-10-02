@@ -25,14 +25,14 @@ enum {BOOL, CHAR, INT, FLOAT, DOUBLE, COMPLEX};
 		false,
 		true
 	} bool;
-#endif
 
-struct complex {
-    int real;
-    int img;
-};
-typedef struct complex complex;
-typedef complex * PtComplex;
+	struct complex {
+	    int real;
+	    int img;
+	};
+	typedef struct complex complex;
+	typedef complex * PtComplex;
+#endif
 
 struct Vector {
     void *info;

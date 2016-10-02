@@ -21,7 +21,7 @@ typedef struct ConjDisjuntos ConjDisjuntos;
 void gerar(ConjDisjuntos *, int);
 int encontrar(ConjDisjuntos *, int);
 void unir(ConjDisjuntos *, int, int);
-void imprimir(const ConjDisjuntos *);
+void imprimirConjuntosDisjuntos(const ConjDisjuntos *);
 
 // Gerar conjuntos disjuntos
 void gerar(ConjDisjuntos *cd, int tam) {
@@ -58,7 +58,7 @@ void unir(ConjDisjuntos *cd, int x, int y) {
 }
 
 // Imprimir conjuntos disjuntos
-void imprimir(const ConjDisjuntos *cd) {
+void imprimirConjuntosDisjuntos(const ConjDisjuntos *cd) {
 	int i;
 
 	for (i = 0; i<cd->tamanho; i++) {
@@ -77,18 +77,18 @@ int mainConjDisjuntos(int argc, char **argv) {
 	unir(&conjDisj, 8,9);
 	unir(&conjDisj, 6,2);
 	unir(&conjDisj, 2,7);
-	imprimir(&conjDisj);
+	imprimirConjuntosDisjuntos(&conjDisj);
 
 	unir(&conjDisj, 8,6);
-	imprimir(&conjDisj);
+	imprimirConjuntosDisjuntos(&conjDisj);
 	puts("");
 
 	unir(&conjDisj, 2,1);
-	imprimir(&conjDisj);
+	imprimirConjuntosDisjuntos(&conjDisj);
 	puts("");
 
 	printf("\nRepresentante do conj. que contem 8: %d\n", encontrar(&conjDisj, 8));
-	imprimir(&conjDisj);
+	imprimirConjuntosDisjuntos(&conjDisj);
 	puts("");
 
     return (0);
