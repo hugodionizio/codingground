@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-int mainDataStructures(int argc, char **argv) {
+int main(int argc, char **argv) {
 	printf("Hello World!\n");
 	printf("Hello Data Structures!");
 

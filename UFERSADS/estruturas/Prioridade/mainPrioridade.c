@@ -1,5 +1,5 @@
 /*
- * main.c
+ * mainPrioridade.c
  *
  *  Created on: 08/07/2015
  *      Author: Hugo Dionzio Santos
@@ -16,7 +16,7 @@
 //#include "trocar.c"
 //#include "piso.c"
 
-int main() {
+int mainPrioridade() {
 	int i = 0, j = 1, k[2], aux, aleatorio, v[TAM];
 	T t[4], t2[TAM], t3[TAM], t4[TAM],
 	t5[TAM] // = {{0,'a'}, {5,'b'}, {6,'c'}, {7,'d'}, {9,'e'},

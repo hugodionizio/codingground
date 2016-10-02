@@ -6,7 +6,7 @@ void decrementarPtr(unsigned *contador);
 int teste(int num);
 
 // Função principal
-int main () {
+int mainTiposConversoes(int argc, char **argv) {
 // Seção de constantes e variáveis
 // Sub-seção de constantes
 

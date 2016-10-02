@@ -34,7 +34,7 @@ void * test(void *data) {
 	return (void *)data;
 }
 
-int main () {
+int mainArvore(int argc, char **argv) {
 	CelulaTmp A;
 	NoAB i, *pi;
 	void *pv, *other, *aux;

@@ -96,8 +96,8 @@ void imprimirVetor (Vector v) {
     puts("\n");
 }
 
-int main() {
-    Vector v, x;
+int mainVector(int argc, char **argv) {
+	Vector v, x;
 
     inicializarVetor(&v, "1 -2,545 30,00 -45.54 700 30 30 500", FLOAT);
     imprimirVetor(v);
