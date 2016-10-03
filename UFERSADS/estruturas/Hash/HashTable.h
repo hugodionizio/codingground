@@ -10,6 +10,7 @@
 
 #include "HashTablePHenrique.h"
 #include "HashTablePHenrique2.h"
+#include "HashTableRosetta.h"
 #include "HashTableSparkNotes.h"
 
 #endif /* ESTRUTURAS_HASH_HASHTABLE_H_ */

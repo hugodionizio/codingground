@@ -15,6 +15,7 @@ int main(int argc, char **argv) {
 
 	mainHashTablePHenrique(argc, argv);
 	mainHashSparkNotes(argc, argv);
+	mainHashTableRosetta(argc, argv);
 
 	return (0);
 }
