@@ -1,6 +1,8 @@
 Data: 07-03-2014 21:04:07
 <NomeDoAlgoritmo> // Algoritmo 	 ; Página 	\n\tEntradas: \n\tSaídas: \n\tVariáveis auxiliares: \n\n\tinício\n\tfim\n
 
+// Implementação dos algoritmos de N. Edelweiss e R. Galante
+
 InicializarLLArr // Algoritmo 3.1; Página 56
 InserirIniLLArr // Algoritmo 3.2; Página 58
 InserirFimLLArr // Algoritmo 3.3; Página 60

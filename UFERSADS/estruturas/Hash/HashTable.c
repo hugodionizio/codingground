@@ -136,3 +136,18 @@ void free_table(hash_table_t *hashtable) {
 	free(hashtable->table);
 	free(hashtable);
 }
+
+int mainHashSparkNotes(int argc, char **argv) {
+	hash_table_t* h;
+
+	h = create_hash_table(10);
+	add_string(h, "hello");
+	add_string(h, "world");
+	add_string(h, "a");
+	add_string(h, "b");
+	printf("hello => %s\n", lookup_string(h, "hello"));
+	printf("herp => %s\n", lookup_string(h, "herp"));
+	printf("a => %s\n", lookup_string(h, "a"));
+
+	return (0);
+}

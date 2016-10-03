@@ -1,3 +1,5 @@
+// Implementação dos algoritmos de J. Szwarcfite e L. Markezon
+
 ﻿// Tipos Abstratos de Dados
 TipoPtNovoAVL == ^TipoNodoAVL
 TipoNodoAVL == registro

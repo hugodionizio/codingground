@@ -107,7 +107,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="estruturas/Hash|Hash|estruturas/Cadeias|estruturas/Listas|estruturas/ConjuntosDisjuntos|Cadeias|Listas|ConjuntosDisjuntos|estruturas/Huffman|Huffman|Arvores|estruturas/Arvores|resources|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="estruturas/Hash|estruturas/Cadeias|estruturas/ConjuntosDisjuntos|src|Listas|Hash|Cadeias|ConjuntosDisjuntos|estruturas/Arvores|resources|estruturas/Arvoress|Huffman|Arvores|estruturas/Arvore|estruturas/Listas|estruturas/Huffman" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="estruturas/Arvores"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="estruturas/Cadeias"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="estruturas/ConjuntosDisjuntos"/>

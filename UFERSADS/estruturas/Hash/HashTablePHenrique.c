@@ -30,7 +30,7 @@ int string_hash_horner(string v, int m){
 
 int mainHashTablePHenrique(int argc, char **argv) {
 	string chave1 = "ufersa";
-	string chave2 = "computacao";
+	string chave2 = "computação";
 	string chave3 = "dcen";
 
 	int c = string_hash_horner(chave1,50);

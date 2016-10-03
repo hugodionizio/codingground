@@ -14,6 +14,7 @@ int main(int argc, char **argv) {
 	printf("Hello Data Structures!\n\n");
 
 	mainHashTablePHenrique(argc, argv);
+	mainHashSparkNotes(argc, argv);
 
 	return (0);
 }
