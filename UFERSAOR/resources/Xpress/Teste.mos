@@ -1,0 +1,27 @@
+model Teste
+uses "mmxprs"; !gain access to the Xpress-Optimizer solver
+
+! Variáveis de Decisão
+declarations
+	x1: mpvar
+	x2: mpvar
+	x3: mpvar
+end-declarations
+
+! Função objetivo
+custo:=3*x1+2*x2+x3 
+
+! Restrições
+Rest_1:= 3*x1+x2+x3 >= 3
+Rest_2:= -3*x1+3*x2+x3>=6
+Rest_3:=x1+x2+x3<=3
+
+!Comando de resolução do problema
+minimize(custo) !minimize (custo)
+!Escrita da solução
+writeln ("solução:\nCusto!", getobjval)
+writeln ("x1 = ", getsol (x1))
+writeln ("x2 = ", getsol (x2))
+writeln ("x3 = ", getsol (x3))
+
+end-model
