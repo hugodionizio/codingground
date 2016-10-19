@@ -1,0 +1,16 @@
+1. Exceção é uma interrupção que ocorre quando um comportamento anormal, indesejado, que ocorre raramente e requer alguma ação imediata em uma parte do programa que está sendo executado
+
+Exceções verificadas, ou exceções checadas são exceções em que um método pode lançar, devendo fazer parte da sua assinatura. Pois se um método pode lançar uma determinada exceção, ele precisa declarar este fato na sua assinatura, senão um erro em tempo de compilação é assinalado.
+
+Já as exceções não verificadas ou não checadas são exceções que não são tratadas.
+
+
+3. Bloco "finally" é o trecho de código final, usado mesmo que uma exceção seja lançada.
+
+
+5. Um bloco "catch" tem vários "catch" de modo que cada um fica responsável por um tratamento específico de erro.
+
+6. IndexOutOfboundsException: Índice de uma lista (Array) fora do intervalo permitido.
+ArithmeticException: Problemas em oprações aritméticas, tais como divisões por zero.
+IOException: Uso de referência que são a ponta para nenhum objeto.
+JMException: Gerada por implementações de JMX. Ela não inclui exceções de tempo de exceução.
