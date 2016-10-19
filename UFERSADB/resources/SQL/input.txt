@@ -1,0 +1,1 @@
+This is the file you can use to provide input to your program and later on open it inside your program to process the input.

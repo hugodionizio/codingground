@@ -1,0 +1,31 @@
+﻿/*
+create table Alunos (
+	Codigo int,
+	Nome_aluno varchar (30),
+	Idade int,
+	Sexo char);
+*/
+
+/*
+create table Alunos2 (
+	Codigo int not null,
+	Nome_aluno varchar (30) not null,
+	Idade int,
+	Sexo char);
+*/
+
+/*
+create table Alunos3 (
+	Codigo int primary key,
+	Nome_aluno varchar (30) not null,
+	Idade int,
+	Sexo char);
+*/
+
+--alter table Alunos add Endereco varchar (100);
+
+--alter table Alunos alter column Nome_Aluno type varchar (50);
+
+--alter table Alunos rename column Codigo to Matricula;
+
+alter table Alunos drop column sexo;

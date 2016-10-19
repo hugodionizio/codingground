@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TEMPLATE><CAMPOS/><TIPOS>&#13;
+    <ITEM>&#13;
+      <Campo1>Texto(1)</Campo1>&#13;
+      <Campo2>Varchar(50)</Campo2>&#13;
+    </ITEM>&#13;
+    <ITEM>&#13;
+      <Campo1>id</Campo1>&#13;
+      <Campo2>int32</Campo2>&#13;
+    </ITEM>&#13;
+  </TIPOS><COMPLEMENTO_CAMPOS/><COMPLEMENTO_TABELAS/><DDL>&#13;
+    <CTab_A>CREATE TABLE *$nome_tabela</CTab_A>&#13;
+    <CTab_B> (</CTab_B>&#13;
+    <CTab_Compl>*$compl_tabela</CTab_Compl>&#13;
+    <CTab_C>)*$separador*$\n</CTab_C>&#13;
+    <CCamp>*$nome_campo *$tipo_campo *$compl_campo</CCamp>&#13;
+    <Pk_inTab>-1</Pk_inTab>&#13;
+    <Fk_inTab>-1</Fk_inTab>&#13;
+    <Const_Nomear>0</Const_Nomear>&#13;
+    <CConst_Nome>*$nome_tabela_*$envol_campo</CConst_Nome>&#13;
+    <Separador></Separador>&#13;
+  </DDL></TEMPLATE>
