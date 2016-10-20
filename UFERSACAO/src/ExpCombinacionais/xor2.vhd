@@ -1,0 +1,17 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY xor2 IS
+PORT (	a, b, c : IN STD_LOGIC;
+	s, s2 : OUT STD_LOGIC);
+END xor2;
+
+ARCHITECTURE behavior OF xor2 IS
+SIGNAL int1, int2 : STD_LOGIC;
+BEGIN
+  int1 <= NOT a AND b;
+  int2 <= a AND NOT b;
+  s <= int1 OR int2;
+  s2 <= a XOR b XOR c;
+END behavior;
+

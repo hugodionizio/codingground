@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity portOR is 
+--CONSTANT z : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
+--porta or de duas entradas
+port (	a: IN std_logic_vector (31 downto 0);
+		 c: OUT std_logic_vector (31 downto 0));
+end portOR;
+
+architecture behavior of portOR is
+CONSTANT z : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
+begin
+	c <= a OR z;
+end behavior;
+

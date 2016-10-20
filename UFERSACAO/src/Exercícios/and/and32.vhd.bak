@@ -1,0 +1,13 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY and32 IS
+PORT (	a, b : IN STD_LOGIC;
+	s: OUT STD_LOGIC);
+END and32;
+
+ARCHITECTURE behavior OF and32 IS
+
+BEGIN
+  s <= a AND b;
+END behavior;

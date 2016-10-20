@@ -1,0 +1,24 @@
+ENTITY som_6aa IS
+  GENERIC(n     : INTEGER  := 3 );                -- numero de bits
+  PORT   (x, y  : IN  BIT_VECTOR (n-1 DOWNTO 0);  -- entradas so somador
+          ze    : IN  BIT;                        -- vem um
+          s     : OUT BIT_VECTOR (n-1 DOWNTO 0);  -- saida
+          zs    : OUT BIT);                       -- vai um
+END som_6aa;
+
+ARCHITECTURE estrutural OF som_6aa IS
+  COMPONENT som_1a                         
+    PORT   (a, b, ve : IN  BIT;  s, vs  : OUT BIT); 
+  END COMPONENT;
+  SIGNAL v : BIT_VECTOR (n DOWNTO 0);  -- vai um interno
+BEGIN
+  v(0) <= ze;
+  zs   <= v(n);
+  abc: FOR i IN 0 TO n-1 GENERATE                                     
+    centro: som_1a PORT MAP (x(i),  y(i),   v(i),    s(i),   v(i+1)); 
+  END GENERATE abc;
+END estrutural;
+
+
+
+
